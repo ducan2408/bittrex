@@ -1,4 +1,3 @@
-require "virtus"
 module Bittrex
   module Model
     class Account
