@@ -6,4 +6,3 @@ gemspec
 
 gem 'rest-client', '~> 2.0', '>= 2.0.2'
 gem 'virtus', '~> 1.0', '>= 1.0.5'
-
