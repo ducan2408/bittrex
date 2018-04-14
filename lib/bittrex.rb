@@ -1,5 +1,9 @@
 require "bittrex/version"
+require "bittrex/model"
+require "bittrex/net"
 
 module Bittrex
-  # Your code goes here...
+  def run
+    puts "loading........."
+  end
 end
