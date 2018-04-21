@@ -1,7 +1,10 @@
 require "bittrex/version"
 require "bittrex/model"
 require "bittrex/net"
+require "bittrex/mapping"
 require "bittrex/account"
+
+
 
 module Bittrex
   class << self
