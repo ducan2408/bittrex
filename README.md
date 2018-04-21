@@ -22,7 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+** Get Account info
+
+    *** Bittrex::Account.get_account currency # Get account by currency
+    *** Bittrex::Account.get_accounts # Get all balance of all currency
 
 ## Development
 
@@ -36,7 +39,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
 
 ## Code of Conduct
 
