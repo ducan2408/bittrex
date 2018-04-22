@@ -12,6 +12,13 @@ module Bittrex
       attribute :requested, Boolean
       attribute :account_id, String
     end
+
+    class DepositAddress
+      include Virtus.model
+
+      attribute :currency, String
+      attribute :address, String
+    end
   end
 
   class ResponseFail

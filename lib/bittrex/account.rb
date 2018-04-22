@@ -15,6 +15,13 @@ module Bittrex
         response["result"].map{ |acc| Bittrex::Mapping.to_account acc }
       end
 
+      def get_depositaddress(currency = "BTC")
+        response = Bittrex::Net.get('account/getdepositaddress',  { currency: currency.upcase })
+        result, error_response = guard(response)
+        return error_response unless result
+        Bittrex::Mapping.to_deposit_address(response["result"])
+      end
+
       def guard(response)
         if response.nil?
           [false, ResponseFail.new(success: false, errors: "Nothing return in response")]
