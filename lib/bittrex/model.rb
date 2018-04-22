@@ -13,4 +13,14 @@ module Bittrex
       attribute :account_id, String
     end
   end
+
+  class ResponseFail
+    include Virtus.model
+    attribute :success, Boolean
+    attribute :errors, Array
+
+    def add_error(msg)
+      errors << msg
+    end
+  end
 end
