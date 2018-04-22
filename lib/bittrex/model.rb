@@ -5,9 +5,9 @@ module Bittrex
       include Virtus.model
 
       attribute :currency, String
-      attribute :balance, Decimal
-      attribute :available, Decimal
-      attribute :pending, Decimal
+      attribute :balance, Float
+      attribute :available, Float
+      attribute :pending, Float
       attribute :crypto_address, String
       attribute :requested, Boolean
       attribute :account_id, String

@@ -1,7 +1,7 @@
 module Bittrex
   module Account
     def self.get_account(currency = "BTC")
-      response = Bittrex::Net.get('account/getbalance', {currency: currency})
+      response = Bittrex::Net.get('account/getbalance', { currency: currency.upcase } )
       Bittrex::Mapping.to_account(response["result"]) if (response && response["success"] == true)
     end
 
