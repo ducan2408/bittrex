@@ -14,6 +14,10 @@ module Bittrex
       secret && key
     end
 
+    def setup
+      yield self
+    end
+
     def sanity_check?
       unless self.configured?
         raise MissingConfigExeception.new("Missing Bittrex config")
